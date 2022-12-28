@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>NOTA</title>
+</head>
+
+<body>
+  <main class="mainDoBoxes">
+    <div class="wrap">
+
+      <div class="boxes">
+        <div class="add" onclick="add()">
+          <h1>ADICIONAR NOTA +</h1>
+        </div>
+        <div class="cards" onclick="look()">
+          <h1>VER NOTAS</h1>
+        </div>
+      </div>
+
+      <div class="note-write">
+        <div class="closeNote" onclick="closeNote()">x</div>
+        <div class="title-da-noteWrite ">
+          <h1>Adicionar Nota</h1>
+        </div>
+
+        <input type="text" class="title">
+        <textarea name="" class="content" cols="30" rows="10"></textarea>
+        <button class="butão-salvar" onclick="salvar()">Salvar</button>
+
+      </div>
+
+      <div class="confirmacao">
+        <h1>Confirmação</h1>
+        <p>Você tem certeza que deseja salva essa Anotação</p>
+        <div class="bnt-confirma"><button onclick="save()">Salvar</button> <button onclick="delet()">Cancelar</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <div class="anotacoes">
+    <div class="wrap2">
+
+      <div class="lista0">
+        <div class="closeListaDiv">
+          <div class="closeLista" onclick="closeLista()">x</div>
+        </div>
+
+        <ul class="lista">
+
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="./index.js"></script>
+
+</body>
+
+</html>
